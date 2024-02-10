@@ -16,7 +16,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     })
     .catch(error => {
         console.error('Error:', error);
-        displayAlert('Error sending message.', 'danger');
+        
     });
 });
 
