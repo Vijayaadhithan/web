@@ -587,6 +587,15 @@ ul {
 	object-fit: cover;
 }
 
+.project-card[data-proof-type='AI Refinery'] .project-preview img {
+	object-fit: contain;
+	object-position: center;
+}
+
+.project-card[data-proof-type='AI Refinery'] .project-preview {
+	background: linear-gradient(180deg, rgba(8, 15, 30, 0.96), rgba(16, 24, 40, 0.88));
+}
+
 .proof-pill {
 	position: absolute;
 	left: 1rem;
@@ -871,16 +880,70 @@ ul {
 }
 
 .proof-modal-media {
-	min-height: 22rem;
+	position: relative;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	min-height: clamp(24rem, 62vh, 38rem);
 	border-radius: 1.45rem;
 	overflow: hidden;
 	background: #0f172a;
+	cursor: default;
 }
 
 .proof-modal-media img {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	object-fit: contain;
+}
+
+.proof-modal-nav {
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+	display: grid;
+	place-items: center;
+	width: 3rem;
+	height: 3rem;
+	border: 0;
+	border-radius: 999px;
+	background: rgba(9, 14, 22, 0.72);
+	color: #fff;
+	font-size: 2rem;
+	line-height: 1;
+	cursor: pointer;
+	transform: translateY(-50%);
+	transition:
+		transform 0.2s ease,
+		background-color 0.2s ease,
+		opacity 0.2s ease;
+}
+
+.proof-modal-nav:hover {
+	transform: translateY(-50%) scale(1.04);
+	background: rgba(9, 14, 22, 0.9);
+}
+
+.proof-modal-nav-prev {
+	left: 1rem;
+}
+
+.proof-modal-nav-next {
+	right: 1rem;
+}
+
+.proof-modal-counter {
+	position: absolute;
+	left: 50%;
+	bottom: 1rem;
+	z-index: 2;
+	padding: 0.4rem 0.75rem;
+	border-radius: 999px;
+	background: rgba(9, 14, 22, 0.72);
+	color: #fff;
+	font-size: 0.88rem;
+	font-weight: 700;
+	transform: translateX(-50%);
 }
 
 .proof-modal-content {
@@ -965,6 +1028,10 @@ ul {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.75rem;
+}
+
+.proof-modal-actions [hidden] {
+	display: none !important;
 }
 
 .footer {
@@ -1144,6 +1211,12 @@ button:focus-visible {
 
 	.proof-modal-media {
 		min-height: 17rem;
+	}
+
+	.proof-modal-nav {
+		width: 2.65rem;
+		height: 2.65rem;
+		font-size: 1.8rem;
 	}
 }
 

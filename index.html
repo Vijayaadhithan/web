@@ -280,58 +280,6 @@
 
 						<article
 							class="project-card reveal"
-							data-proof-type="Analytics"
-							data-proof-badge="Tableau + Forecasting"
-							data-proof-title="Sales Analysis and Forecasting"
-							data-proof-image="images/tab.png"
-							data-proof-alt="Proof image for the sales analysis and forecasting project"
-							data-proof-description="This work combined dashboards and forecasting to uncover geographic, customer, and product insights from a large US sales dataset."
-							data-proof-points="Used Tableau for business-facing dashboards and Python for ARIMA and regression work.|Highlighted top-performing regions, products, and customer segments.|Shows the ability to move from raw data to executive-friendly reporting."
-							data-proof-tags="Tableau|Python|Forecasting|Analytics"
-							data-proof-source="https://public.tableau.com/app/profile/vijayaadhithan.tamilselvan1154/vizzes"
-						>
-							<div class="project-preview">
-								<img
-									src="images/tab.png"
-									alt="Proof preview for the sales analysis and forecasting project"
-								/>
-								<button class="proof-pill open-proof" type="button">Open proof</button>
-							</div>
-							<div class="project-topline">
-								<span class="project-type">Analytics</span>
-								<span class="project-badge">Tableau + Forecasting</span>
-							</div>
-							<h3>Sales Analysis and Forecasting</h3>
-							<p>
-								Analyzed a large US sales dataset to uncover geographic,
-								customer, and product insights while pairing dashboards with
-								forecasting work in Python.
-							</p>
-							<ul class="project-points">
-								<li>Tableau dashboards supported quick business-level scanning.</li>
-								<li>Python models added forecasting and feature importance.</li>
-								<li>Clear bridge between analysis and executive-friendly views.</li>
-							</ul>
-							<div class="project-tags">
-								<span>Tableau</span>
-								<span>Python</span>
-								<span>Forecasting</span>
-								<span>Analytics</span>
-							</div>
-							<div class="project-links">
-								<button class="project-link-button open-proof" type="button">Open proof</button>
-								<a
-									href="https://public.tableau.com/app/profile/vijayaadhithan.tamilselvan1154/vizzes"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									View dashboards
-								</a>
-							</div>
-						</article>
-
-						<article
-							class="project-card reveal"
 							data-proof-type="ML Pipeline"
 							data-proof-badge="Automation"
 							data-proof-title="GitHub Stargazer Prediction Pipeline"
@@ -379,6 +327,54 @@
 								>
 									View source
 								</a>
+							</div>
+						</article>
+
+						<article
+							class="project-card reveal"
+							data-proof-type="AI Refinery"
+							data-proof-badge="Staffing Assistant"
+							data-proof-title="Project Staffing Assistant"
+							data-proof-image="images/ai-refinery-staffing-cover.png"
+							data-proof-alt="Project Staffing Assistant title slide"
+							data-proof-description="Built a staffing assistant on AI Refinery that converts free-form project requirements into ranked candidate recommendations using retrieval, reranking, and guided report generation."
+							data-proof-points="Extracted required skills from natural-language staffing requests and filtered immediately available employees.|Combined AI Refinery embeddings, a FAISS resume index, and reranking to improve shortlist precision.|Returned match scores, skill gaps, training suggestions, and readiness estimates through Flask APIs and a Streamlit chat UI."
+							data-proof-tags="AI Refinery|FAISS|Flask|Streamlit|Reranking"
+							data-proof-source=""
+							data-proof-gallery="images/ai-refinery-staffing-cover.png|images/ai-refinery-staffing-main.png|images/ai-refinery-staffing-results.png|images/ai-refinery-staffing-results-alt.png"
+							data-proof-gallery-alts="Project Staffing Assistant title slide|Project Staffing Assistant showing the initial assistant screen|Project Staffing Assistant showing ranked candidates and match details|Project Staffing Assistant showing an alternate ranked results state"
+						>
+							<div class="project-preview">
+								<img
+									src="images/ai-refinery-staffing-cover.png"
+									alt="Proof preview for the AI Refinery Project Staffing Assistant"
+								/>
+								<button class="proof-pill open-proof" type="button">Open proof</button>
+							</div>
+							<div class="project-topline">
+								<span class="project-type">AI Refinery</span>
+								<span class="project-badge">Staffing Assistant</span>
+							</div>
+							<h3>Project Staffing Assistant</h3>
+							<p>
+								Built a project staffing assistant with AI Refinery that turns
+								free-form hiring requests into ranked candidate recommendations
+								backed by retrieval, reranking, and training guidance.
+							</p>
+							<ul class="project-points">
+								<li>Extracted project skills from natural-language prompts.</li>
+								<li>Used AI Refinery embeddings, FAISS search, and reranking.</li>
+								<li>Delivered skill gaps and training plans in Streamlit.</li>
+							</ul>
+							<div class="project-tags">
+								<span>AI Refinery</span>
+								<span>FAISS</span>
+								<span>Flask</span>
+								<span>Streamlit</span>
+								<span>Reranking</span>
+							</div>
+							<div class="project-links">
+								<button class="project-link-button open-proof" type="button">View screenshots</button>
 							</div>
 						</article>
 					</div>
@@ -554,7 +550,24 @@
 							×
 						</button>
 						<div class="proof-modal-media">
+							<button
+								class="proof-modal-nav proof-modal-nav-prev"
+								id="proofModalPrev"
+								type="button"
+								aria-label="Show previous project screenshot"
+							>
+								‹
+							</button>
 							<img id="proofModalImage" src="" alt="" />
+							<button
+								class="proof-modal-nav proof-modal-nav-next"
+								id="proofModalNext"
+								type="button"
+								aria-label="Show next project screenshot"
+							>
+								›
+							</button>
+							<div class="proof-modal-counter" id="proofModalCounter" aria-live="polite"></div>
 						</div>
 						<div class="proof-modal-content">
 							<div class="proof-modal-meta">
@@ -570,6 +583,7 @@
 									class="button"
 									id="proofModalSource"
 									href="#"
+									hidden
 									target="_blank"
 									rel="noopener noreferrer"
 								>
