@@ -587,11 +587,13 @@ ul {
 	object-fit: cover;
 }
 
+.project-card[data-proof-type='Big Data'] .project-preview img,
 .project-card[data-proof-type='AI Refinery'] .project-preview img {
 	object-fit: contain;
 	object-position: center;
 }
 
+.project-card[data-proof-type='Big Data'] .project-preview,
 .project-card[data-proof-type='AI Refinery'] .project-preview {
 	background: linear-gradient(180deg, rgba(8, 15, 30, 0.96), rgba(16, 24, 40, 0.88));
 }

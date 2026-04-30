@@ -231,17 +231,19 @@
 							data-proof-type="Big Data"
 							data-proof-badge="Spark Benchmarking"
 							data-proof-title="Big Data Analysis of Music Metadata"
-							data-proof-image="images/bgd.jpg"
-							data-proof-alt="Proof image for the Big Data Analysis of Music Metadata project"
-							data-proof-description="This project analyzed the Million Song Dataset using a standalone Spark cluster to understand scalable processing and worker-performance tradeoffs."
-							data-proof-points="Built a standalone Spark cluster with Docker containers for repeatable setup.|Benchmarked multiple worker-count configurations on 10k to 50k song slices.|Shows performance reasoning, cluster setup, and scalable data processing."
-							data-proof-tags="Spark|Docker|Big Data|Benchmarking"
+							data-proof-image="images/music-metadata-spark-story.png"
+							data-proof-alt="Million Song Spark Explorer story view showing dataset coverage and Spark ingestion metrics"
+							data-proof-description="This project analyzed the Million Song Dataset with a Spark-backed explorer that turns HDF5 music metadata into visible app views, metrics, charts, and filtered tables."
+							data-proof-points="Built a local Spark application around the Million Song Subset with visible dataset ingestion metrics.|Surfaced audio features, tempo and duration bands, hotttness trends, and filtered song and artist tables.|Shows Spark processing, data product thinking, and analysis that can be inspected without opening a notebook."
+							data-proof-tags="Spark|Streamlit|HDF5|Big Data|Music Metadata"
 							data-proof-source="https://github.com/Vijayaadhithan/Spark_Standalone.git"
+							data-proof-gallery="images/music-metadata-spark-story.png|images/music-metadata-spark-audio.png|images/music-metadata-spark-explore.png|images/music-metadata-spark-charts.png"
+							data-proof-gallery-alts="Million Song Spark Explorer story view with Spark ingestion metrics|Million Song Spark Explorer audio feature view with tempo and duration charts|Million Song Spark Explorer explore view with filters and ranked tables|Million Song Spark Explorer charts view showing song hotttness trends"
 						>
 							<div class="project-preview">
 								<img
-									src="images/bgd.jpg"
-									alt="Proof preview for the Big Data Analysis of Music Metadata project"
+									src="images/music-metadata-spark-story.png"
+									alt="Proof preview for the Big Data Analysis of Music Metadata app"
 								/>
 								<button class="proof-pill open-proof" type="button">Open proof</button>
 							</div>
@@ -527,7 +529,13 @@
 							</div>
 							<div class="contact-item">
 								<span class="contact-label">Resume</span>
-								<p>Resume link coming soon</p>
+								<a
+									href="documents/Vjaadhi_Resume_1.pdf"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									View resume
+								</a>
 							</div>
 						</div>
 					</div>
