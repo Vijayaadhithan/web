@@ -598,6 +598,40 @@ ul {
 	background: linear-gradient(180deg, rgba(8, 15, 30, 0.96), rgba(16, 24, 40, 0.88));
 }
 
+.project-preview-placeholder {
+	display: grid;
+	place-items: center;
+	padding: 1.25rem;
+	background:
+		linear-gradient(145deg, rgba(20, 184, 166, 0.18), rgba(249, 115, 22, 0.16)),
+		#0f172a;
+}
+
+.project-preview-placeholder:after {
+	display: none;
+}
+
+.project-preview-placeholder div {
+	display: grid;
+	gap: 0.45rem;
+	text-align: center;
+}
+
+.project-preview-placeholder span {
+	color: #99e5dc;
+	font-size: 0.88rem;
+	font-weight: 800;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.project-preview-placeholder strong {
+	max-width: 12ch;
+	color: #fff;
+	font-size: 2.25rem;
+	line-height: 0.96;
+}
+
 .proof-pill {
 	position: absolute;
 	left: 1rem;
@@ -740,6 +774,12 @@ ul {
 
 .project-links a:hover {
 	color: #fff;
+}
+
+.project-link-note {
+	color: rgba(248, 250, 252, 0.72);
+	font-size: 0.92rem;
+	font-weight: 700;
 }
 
 .mini-projects {
