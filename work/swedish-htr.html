@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>
+      Swedish handwritten text recognition — Vijayaadhithan Tamilselvan
+    </title>
+    <meta
+      name="description"
+      content="A layout-to-transcription workflow for historical Swedish manuscripts using transfer learning and structured document output."
+    />
+    <meta name="theme-color" content="#f8f9fb" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Swedish handwritten text recognition — Vijayaadhithan Tamilselvan"
+    />
+    <meta
+      property="og:description"
+      content="A layout-to-transcription workflow for historical Swedish manuscripts using transfer learning and structured document output."
+    />
+    <meta
+      property="og:image"
+      content="https://vijayaadhithan.github.io/web/images/og-professional.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
+    <noscript
+      ><style>
+        .reveal {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+        .motion-toggle,
+        .demo-steps {
+          display: none;
+        }
+        @media (max-width: 760px) {
+          .site-nav {
+            position: static;
+            display: flex;
+            flex-wrap: wrap;
+            grid-column: 1 / -1;
+            padding: 0 0 1rem;
+            border: 0;
+            box-shadow: none;
+          }
+          .menu-toggle {
+            display: none;
+          }
+        }
+      </style></noscript
+    >
+    <link rel="stylesheet" href="../assets/css/site.css?v=ffeb75d8b147" />
+  </head>
+  <body class="case-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="shell header-inner">
+        <a
+          class="brand"
+          href="../index.html"
+          aria-label="Vijayaadhithan Tamilselvan, home"
+          ><span class="brand-mark" aria-hidden="true">vt<span>.</span></span
+          ><span class="brand-name">Vijayaadhithan T.</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span></span><span></span><span class="sr-only">Open navigation</span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          <a href="../index.html#experience">Experience</a
+          ><a href="../index.html#work">Projects</a
+          ><a href="../index.html#research">Research</a
+          ><a href="../index.html#contact">Contact</a
+          ><a
+            class="mobile-resume"
+            href="../documents/Vjaadhi_Resume_1.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View résumé ↗</a
+          >
+        </nav>
+        <a
+          class="header-cta"
+          href="../documents/Vjaadhi_Resume_1.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Résumé <span aria-hidden="true">↗</span></a
+        >
+      </div>
+      <div class="reading-progress" aria-hidden="true"><span></span></div>
+    </header>
+    <main id="main" class="shell case-main">
+      <a class="back-link" href="../index.html#work">← All work</a>
+      <header class="case-hero">
+        <p class="kicker">04 / University team project</p>
+        <h1>Swedish handwritten text recognition</h1>
+        <p class="case-lead">
+          A layout-to-transcription workflow for historical Swedish manuscripts
+          using transfer learning and structured document output.
+        </p>
+        <dl class="case-meta">
+          <div>
+            <dt>Context</dt>
+            <dd>Project in Data Science</dd>
+          </div>
+          <div>
+            <dt>Period</dt>
+            <dd>September 2023–January 2024</dd>
+          </div>
+          <div>
+            <dt>Focus</dt>
+            <dd>Layout analysis · HTR · evaluation</dd>
+          </div>
+        </dl>
+      </header>
+      <figure class="case-figure">
+        <img
+          src="../images/htr-baseline-intro.jpg"
+          alt="Swedish historical manuscript with detected text lines and baselines"
+          loading="lazy"
+          width="7320"
+          height="5820"
+        />
+        <figcaption>
+          Layout analysis and baseline identification in historical Swedish
+          documents.
+        </figcaption>
+      </figure>
+      <section class="case-block reveal">
+        <p class="kicker">The project</p>
+        <h2>From handwritten pages to structured text.</h2>
+        <p>
+          A university team project using the Labours Memory dataset of
+          historical Swedish union reports. The workflow combines Laypa for text
+          areas and baselines, Loghi HTR transfer learning for transcription,
+          and PageXML for structured output and reading order.
+        </p>
+      </section>
+      <ol class="pipeline" aria-label="System flow">
+        <li>
+          <span>01</span><strong>Detect layout</strong
+          ><small>Locate text regions and baselines with Laypa.</small>
+        </li>
+        <li>
+          <span>02</span><strong>Recognize text</strong
+          ><small
+            >Segment lines and transcribe using Loghi HTR and transfer
+            learning.</small
+          >
+        </li>
+        <li>
+          <span>03</span><strong>Structure the output</strong
+          ><small
+            >Store Unicode transcriptions in PageXML and reconstruct reading
+            order.</small
+          >
+        </li>
+      </ol>
+      <section class="case-block reveal">
+        <p class="kicker">Documented evaluation</p>
+        <h2>Results in their experimental context.</h2>
+        <div class="metric-pair">
+          <div><strong>2.56%</strong><span>Character error rate</span></div>
+          <div><strong>44.59%</strong><span>Word error rate</span></div>
+        </div>
+        <p>
+          The repository reports 1,725 images, a random 90/10
+          training–validation split, and results averaged over five tests.
+          Training used TensorFlow 2 on an NVIDIA A100 40 GB GPU on Alvis, with
+          Apptainer containers.
+        </p>
+        <p>
+          These are historical project results under the documented setup.
+          Character error rate and word error rate measure different aspects of
+          transcription quality.
+        </p>
+        <div class="tag-row">
+          <span>Laypa</span><span>Loghi</span><span>TensorFlow</span
+          ><span>Transfer learning</span><span>PageXML</span
+          ><span>Apptainer</span>
+        </div>
+      </section>
+      <section class="case-block reveal" id="evidence">
+        <p class="kicker">Explore the evidence</p>
+        <h2>Code, contracts &amp; documentation.</h2>
+        <div class="evidence-list">
+          <a
+            href="https://github.com/Vijayaadhithan/Swedish_HTR/blob/main/README.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span
+              ><strong>Project README</strong
+              ><small
+                >Workflow, dataset, training setup, and reported CER/WER.</small
+              ></span
+            ><span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+      <a class="next-case" href="doorstep.html"
+        ><span>Explore another case study</span
+        ><strong
+          >DoorStep marketplace <span aria-hidden="true">→</span></strong
+        ></a
+      >
+    </main>
+    <footer class="site-footer shell">
+      <p>© <span id="year">2026</span> Vijayaadhithan Tamilselvan</p>
+      <div>
+        <button class="motion-toggle" type="button" aria-pressed="false">
+          <span class="motion-symbol" aria-hidden="true">Ⅱ</span
+          ><span data-motion-label>Pause animations</span></button
+        ><a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+    <script src="../assets/js/main.js?v=dc5e47312bee"></script>
+  </body>
+</html>

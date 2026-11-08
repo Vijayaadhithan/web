@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Querix Search — Vijayaadhithan Tamilselvan</title>
+    <meta
+      name="description"
+      content="Turning ambiguous customer intent into relevant inventory, with a complete path from catalog preparation to search APIs and product UI."
+    />
+    <meta name="theme-color" content="#f8f9fb" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Querix Search — Vijayaadhithan Tamilselvan"
+    />
+    <meta
+      property="og:description"
+      content="Turning ambiguous customer intent into relevant inventory, with a complete path from catalog preparation to search APIs and product UI."
+    />
+    <meta
+      property="og:image"
+      content="https://vijayaadhithan.github.io/web/images/og-professional.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
+    <noscript
+      ><style>
+        .reveal {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+        .motion-toggle,
+        .demo-steps {
+          display: none;
+        }
+        @media (max-width: 760px) {
+          .site-nav {
+            position: static;
+            display: flex;
+            flex-wrap: wrap;
+            grid-column: 1 / -1;
+            padding: 0 0 1rem;
+            border: 0;
+            box-shadow: none;
+          }
+          .menu-toggle {
+            display: none;
+          }
+        }
+      </style></noscript
+    >
+    <link rel="stylesheet" href="../assets/css/site.css?v=ffeb75d8b147" />
+  </head>
+  <body class="case-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="shell header-inner">
+        <a
+          class="brand"
+          href="../index.html"
+          aria-label="Vijayaadhithan Tamilselvan, home"
+          ><span class="brand-mark" aria-hidden="true">vt<span>.</span></span
+          ><span class="brand-name">Vijayaadhithan T.</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span></span><span></span><span class="sr-only">Open navigation</span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          <a href="../index.html#experience">Experience</a
+          ><a href="../index.html#work">Projects</a
+          ><a href="../index.html#research">Research</a
+          ><a href="../index.html#contact">Contact</a
+          ><a
+            class="mobile-resume"
+            href="../documents/Vjaadhi_Resume_1.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View résumé ↗</a
+          >
+        </nav>
+        <a
+          class="header-cta"
+          href="../documents/Vjaadhi_Resume_1.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Résumé <span aria-hidden="true">↗</span></a
+        >
+      </div>
+      <div class="reading-progress" aria-hidden="true"><span></span></div>
+    </header>
+    <main id="main" class="shell case-main">
+      <a class="back-link" href="../index.html#work">← All work</a>
+      <header class="case-hero">
+        <p class="kicker">01 / Independent product engineering</p>
+        <h1>Querix Search</h1>
+        <p class="case-lead">
+          Turning ambiguous customer intent into relevant inventory, with a
+          complete path from catalog preparation to search APIs and product UI.
+        </p>
+        <dl class="case-meta">
+          <div>
+            <dt>Role</dt>
+            <dd>Creator &amp; engineer</dd>
+          </div>
+          <div>
+            <dt>Scope</dt>
+            <dd>ETL · search · analytics · frontend</dd>
+          </div>
+          <div>
+            <dt>System</dt>
+            <dd>Tenant-scoped hybrid retrieval</dd>
+          </div>
+        </dl>
+      </header>
+      <section class="case-block case-summary reveal">
+        <p class="kicker">The problem</p>
+        <h2>A catalog rarely speaks the way a customer does.</h2>
+        <p>
+          Product and classified listings contain inconsistent descriptions,
+          attributes, and categories. Customers arrive with incomplete
+          requirements, spelling mistakes, and natural-language queries. I built
+          Querix Search to connect that intent with relevant, tenant-scoped
+          inventory.
+        </p>
+      </section>
+      <ol class="pipeline" aria-label="System flow">
+        <li>
+          <span>01</span><strong>Prepare the catalog</strong
+          ><small
+            >Read-only source refresh, company adapters, normalization, and
+            validation.</small
+          >
+        </li>
+        <li>
+          <span>02</span><strong>Publish safely</strong
+          ><small
+            >Parquet artifacts and a validated search-ready database
+            handoff.</small
+          >
+        </li>
+        <li>
+          <span>03</span><strong>Interpret the request</strong
+          ><small
+            >Exact categories and simple filters take a deterministic path;
+            ambiguous queries take a semantic path.</small
+          >
+        </li>
+        <li>
+          <span>04</span><strong>Retrieve &amp; rank</strong
+          ><small
+            >pgvector HNSW and persistent BM25, reciprocal-rank fusion, then
+            hosted reranking.</small
+          >
+        </li>
+        <li>
+          <span>05</span><strong>Deliver the product</strong
+          ><small
+            >Canonical database hydration, cursor pagination, developer docs,
+            and private analytics.</small
+          >
+        </li>
+      </ol>
+      <section class="case-block reveal">
+        <p class="kicker">My contribution</p>
+        <h2>From source data to the product surface.</h2>
+        <div class="case-columns">
+          <div>
+            <h3>Search &amp; serving</h3>
+            <p>
+              Structured query planning, tenant-scoped filters and API access,
+              hybrid retrieval, ranking, pagination, result caching, and API
+              diagnostics.
+            </p>
+            <h3>Data foundation</h3>
+            <p>
+              Incremental catalog preparation with separate vector and lexical
+              text contracts, content hashes, quality gates, and guarded
+              publication.
+            </p>
+          </div>
+          <div>
+            <h3>Product &amp; analytics</h3>
+            <p>
+              A React and TypeScript website, developer documentation, and
+              separate company and internal analytics experiences with
+              session-based access.
+            </p>
+            <h3>Operational behavior</h3>
+            <p>
+              Serving-path readiness, bounded admission, persistent indexes, and
+              explicit degradation when a retrieval branch or hosted reranker is
+              unavailable.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="decision-panel">
+        <p class="kicker">An engineering decision</p>
+        <h2>Spend model calls where interpretation adds value.</h2>
+        <p>
+          Exact catalog categories with simple stated filters use indexed
+          database lookup. Descriptive or ambiguous requests use embeddings and
+          hybrid retrieval. The routing preserves explicit client filters while
+          avoiding unnecessary model work on straightforward queries.
+        </p>
+      </section>
+      <section class="case-block reveal">
+        <h2>Three repositories. One search experience.</h2>
+        <p>
+          The ETL prepares retrieval content; the search service owns embedding
+          generation and online ranking; the frontend presents the product and
+          its integration contract. Those responsibilities stay explicit so a
+          pipeline change does not silently become a serving change.
+        </p>
+        <div class="tag-row">
+          <span>Python</span><span>FastAPI</span><span>pgvector</span
+          ><span>BM25</span><span>Redis</span><span>Parquet</span
+          ><span>React</span><span>TypeScript</span>
+        </div>
+      </section>
+      <section class="case-block reveal" id="evidence">
+        <p class="kicker">Explore the evidence</p>
+        <h2>Architecture, contracts &amp; documentation.</h2>
+        <div class="evidence-list">
+          <a
+            href="https://querix.co/developers/architecture"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span
+              ><strong>Search backend</strong
+              ><small
+                >Routing, tenant boundaries, retrieval, reranking, and
+                operations.</small
+              ></span
+            ><span aria-hidden="true">↗</span></a
+          ><a
+            href="https://querix.co/developers/data-pipeline"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span
+              ><strong>Catalog ETL</strong
+              ><small
+                >Normalization, validation, incremental processing, and
+                publishing.</small
+              ></span
+            ><span aria-hidden="true">↗</span></a
+          ><a
+            href="https://querix.co/developers"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span
+              ><strong>Querix frontend</strong
+              ><small
+                >Product pages, developer documentation, and private
+                analytics.</small
+              ></span
+            ><span aria-hidden="true">↗</span></a
+          ><a href="https://querix.co" target="_blank" rel="noopener noreferrer"
+            ><span
+              ><strong>Visit Querix</strong
+              ><small>Explore the public product website.</small></span
+            ><span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+      <a class="next-case" href="conversational-commerce.html"
+        ><span>Explore another case study</span
+        ><strong
+          >Conversational commerce <span aria-hidden="true">→</span></strong
+        ></a
+      >
+    </main>
+    <footer class="site-footer shell">
+      <p>© <span id="year">2026</span> Vijayaadhithan Tamilselvan</p>
+      <div>
+        <button class="motion-toggle" type="button" aria-pressed="false">
+          <span class="motion-symbol" aria-hidden="true">Ⅱ</span
+          ><span data-motion-label>Pause animations</span></button
+        ><a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+    <script src="../assets/js/main.js?v=dc5e47312bee"></script>
+  </body>
+</html>

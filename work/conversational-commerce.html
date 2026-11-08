@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Conversational commerce — Vijayaadhithan Tamilselvan</title>
+    <meta
+      name="description"
+      content="A shopping system that carries requirements across turns, retrieves eligible products, and explains recommendations using catalog evidence."
+    />
+    <meta name="theme-color" content="#f8f9fb" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Conversational commerce — Vijayaadhithan Tamilselvan"
+    />
+    <meta
+      property="og:description"
+      content="A shopping system that carries requirements across turns, retrieves eligible products, and explains recommendations using catalog evidence."
+    />
+    <meta
+      property="og:image"
+      content="https://vijayaadhithan.github.io/web/images/og-professional.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
+    <noscript
+      ><style>
+        .reveal {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+        .motion-toggle,
+        .demo-steps {
+          display: none;
+        }
+        @media (max-width: 760px) {
+          .site-nav {
+            position: static;
+            display: flex;
+            flex-wrap: wrap;
+            grid-column: 1 / -1;
+            padding: 0 0 1rem;
+            border: 0;
+            box-shadow: none;
+          }
+          .menu-toggle {
+            display: none;
+          }
+        }
+      </style></noscript
+    >
+    <link rel="stylesheet" href="../assets/css/site.css?v=ffeb75d8b147" />
+  </head>
+  <body class="case-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="shell header-inner">
+        <a
+          class="brand"
+          href="../index.html"
+          aria-label="Vijayaadhithan Tamilselvan, home"
+          ><span class="brand-mark" aria-hidden="true">vt<span>.</span></span
+          ><span class="brand-name">Vijayaadhithan T.</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span></span><span></span><span class="sr-only">Open navigation</span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          <a href="../index.html#experience">Experience</a
+          ><a href="../index.html#work">Projects</a
+          ><a href="../index.html#research">Research</a
+          ><a href="../index.html#contact">Contact</a
+          ><a
+            class="mobile-resume"
+            href="../documents/Vjaadhi_Resume_1.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View résumé ↗</a
+          >
+        </nav>
+        <a
+          class="header-cta"
+          href="../documents/Vjaadhi_Resume_1.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Résumé <span aria-hidden="true">↗</span></a
+        >
+      </div>
+      <div class="reading-progress" aria-hidden="true"><span></span></div>
+    </header>
+    <main id="main" class="shell case-main">
+      <a class="back-link" href="../index.html#work">← All work</a>
+      <header class="case-hero">
+        <p class="kicker">02 / Independent product engineering</p>
+        <h1>Conversational commerce</h1>
+        <p class="case-lead">
+          A shopping system that carries requirements across turns, retrieves
+          eligible products, and explains recommendations using catalog
+          evidence.
+        </p>
+        <dl class="case-meta">
+          <div>
+            <dt>Role</dt>
+            <dd>Creator &amp; engineer</dd>
+          </div>
+          <div>
+            <dt>Scope</dt>
+            <dd>Catalog ETL · backend · product integration</dd>
+          </div>
+          <div>
+            <dt>Access</dt>
+            <dd>Private tester demo</dd>
+          </div>
+        </dl>
+      </header>
+      <div class="case-demo-grid">
+        <div>
+          <p class="kicker">The problem</p>
+          <h2>Shopping requirements evolve with the conversation.</h2>
+          <p>
+            A shopper might start with a broad need, add a budget, and then
+            compare two results. I built a commerce backend and catalog pipeline
+            that keep the shopping task across turns and ground explanations in
+            the supplied product listings.
+          </p>
+        </div>
+        <div class="commerce-demo" data-commerce-demo>
+          <div class="demo-heading">
+            <span class="eyebrow">Querix / commerce</span
+            ><span class="demo-label">Illustrative flow</span>
+          </div>
+          <div
+            class="demo-steps"
+            role="group"
+            aria-label="Explore an example shopping conversation"
+          >
+            <button type="button" data-commerce-step="0" aria-pressed="true">
+              01 Discover
+            </button>
+            <button type="button" data-commerce-step="1" aria-pressed="false">
+              02 Refine
+            </button>
+            <button type="button" data-commerce-step="2" aria-pressed="false">
+              03 Compare
+            </button>
+          </div>
+          <div
+            class="conversation-example"
+            aria-live="polite"
+            aria-atomic="true"
+          >
+            <p class="message-label">Shopper</p>
+            <p class="example-request" data-demo-request>
+              Lightweight shoes for walking.
+            </p>
+            <div class="demo-divider">
+              <span></span> Shopping state <span></span>
+            </div>
+            <div class="state-tags" data-demo-state>
+              <span>Footwear</span><span>Walking</span><span>Lightweight</span>
+            </div>
+            <p class="example-explanation" data-demo-explanation>
+              Identify the shopping task, retrieve eligible catalog listings,
+              and explain the results using supplied listing details.
+            </p>
+          </div>
+          <p class="demo-footnote">
+            Explore the steps. This example makes no live AI requests.
+          </p>
+        </div>
+      </div>
+      <ol class="pipeline" aria-label="System flow">
+        <li>
+          <span>01</span><strong>Audit &amp; normalize</strong
+          ><small
+            >DuckDB processes historical fashion and beauty metadata, preserving
+            source evidence and unknown fields.</small
+          >
+        </li>
+        <li>
+          <span>02</span><strong>Publish a catalog</strong
+          ><small
+            >Checksummed Parquet and JSONL outputs feed an immutable, validated
+            PostgreSQL snapshot.</small
+          >
+        </li>
+        <li>
+          <span>03</span><strong>Build retrieval</strong
+          ><small
+            >Reusable embedding snapshots and verified Qdrant collections
+            support dense and BM25 retrieval.</small
+          >
+        </li>
+        <li>
+          <span>04</span><strong>Interpret &amp; recommend</strong
+          ><small
+            >Persistent shopping requirements, mandatory filters, rank fusion,
+            and configurable reranking.</small
+          >
+        </li>
+        <li>
+          <span>05</span><strong>Explain &amp; continue</strong
+          ><small
+            >Listing-grounded highlights, comparisons, streaming events, and
+            saved conversation history.</small
+          >
+        </li>
+      </ol>
+      <section class="case-block reveal">
+        <p class="kicker">My contribution</p>
+        <h2>The conversation is only one part of the system.</h2>
+        <div class="case-columns">
+          <div>
+            <h3>Reproducible data preparation</h3>
+            <p>
+              A separate ETL repository handles normalization, coherent
+              duplicate selection, quality-eligible subsets, provenance,
+              checksums, and atomic publication. It prepares the catalog; the
+              backend owns models and embeddings.
+            </p>
+            <h3>Retrieval with explicit boundaries</h3>
+            <p>
+              PostgreSQL is authoritative for product records and mandatory
+              filters. Qdrant serves dense and BM25 candidates, with
+              reciprocal-rank fusion and configurable local or hosted reranking.
+            </p>
+          </div>
+          <div>
+            <h3>Conversation lifecycle</h3>
+            <p>
+              SQLite transcripts, recent turns, rolling summaries, persistent
+              shopping tasks, request replay protection, and streamed product
+              cards and highlights.
+            </p>
+            <h3>Private product experience</h3>
+            <p>
+              The shared Querix frontend supports tester sign-in, assigned
+              categories, saved chats, and administrative account management.
+              The commerce demo requires access.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="decision-panel">
+        <p class="kicker">Grounding &amp; data boundaries</p>
+        <h2>Keep unknowns visible.</h2>
+        <p>
+          The catalog uses historical product metadata. Its observed prices and
+          listing claims do not establish current prices, live stock,
+          purchasable variants, or independently verified suitability.
+          Explanations should stay within the evidence supplied by the catalog.
+        </p>
+      </section>
+      <section class="case-block reveal">
+        <h2>Two products, distinct retrieval stacks.</h2>
+        <p>
+          Querix Search uses pgvector and a persistent lexical index.
+          Conversational Commerce uses Qdrant for online dense and BM25
+          retrieval, backed by an authoritative PostgreSQL catalog. They share a
+          product website while keeping their service and access contracts
+          separate.
+        </p>
+        <div class="tag-row">
+          <span>FastAPI</span><span>DuckDB</span><span>Qdrant</span
+          ><span>PostgreSQL</span><span>SQLite</span><span>Redis</span
+          ><span>Parquet</span><span>SSE</span>
+        </div>
+      </section>
+      <section class="case-block reveal" id="evidence">
+        <p class="kicker">Explore the evidence</p>
+        <h2>Code, contracts &amp; documentation.</h2>
+        <div class="evidence-list">
+          <a
+            href="https://github.com/Vijayaadhithan/conversational_commerce/blob/main/README.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span
+              ><strong>Commerce backend</strong
+              ><small
+                >Conversation contracts, retrieval, catalog imports, and
+                streaming.</small
+              ></span
+            ><span aria-hidden="true">↗</span></a
+          ><a
+            href="https://github.com/Vijayaadhithan/conversational_commerce_etl/blob/main/README.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span
+              ><strong>Commerce ETL</strong
+              ><small
+                >Source auditing, deduplication, provenance, and reproducible
+                outputs.</small
+              ></span
+            ><span aria-hidden="true">↗</span></a
+          ><a
+            href="https://querix.co/developers/commerce"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span
+              ><strong>Frontend &amp; access</strong
+              ><small
+                >The shared product surface and private tester workflow.</small
+              ></span
+            ><span aria-hidden="true">↗</span></a
+          ><a href="https://querix.co" target="_blank" rel="noopener noreferrer"
+            ><span
+              ><strong>Querix product website</strong
+              ><small
+                >Learn about the product and request a demonstration.</small
+              ></span
+            ><span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+      <a class="next-case" href="enterprise-ai.html"
+        ><span>Explore another case study</span
+        ><strong
+          >Enterprise AI engineering <span aria-hidden="true">→</span></strong
+        ></a
+      >
+    </main>
+    <footer class="site-footer shell">
+      <p>© <span id="year">2026</span> Vijayaadhithan Tamilselvan</p>
+      <div>
+        <button class="motion-toggle" type="button" aria-pressed="false">
+          <span class="motion-symbol" aria-hidden="true">Ⅱ</span
+          ><span data-motion-label>Pause animations</span></button
+        ><a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+    <script src="../assets/js/main.js?v=dc5e47312bee"></script>
+  </body>
+</html>

@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Project staffing assistant — Vijayaadhithan Tamilselvan</title>
+    <meta
+      name="description"
+      content="A retrieval-driven assistant that turns conversational project requirements into candidate matching and skill-gap analysis."
+    />
+    <meta name="theme-color" content="#f8f9fb" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Project staffing assistant — Vijayaadhithan Tamilselvan"
+    />
+    <meta
+      property="og:description"
+      content="A retrieval-driven assistant that turns conversational project requirements into candidate matching and skill-gap analysis."
+    />
+    <meta
+      property="og:image"
+      content="https://vijayaadhithan.github.io/web/images/og-professional.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
+    <noscript
+      ><style>
+        .reveal {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+        .motion-toggle,
+        .demo-steps {
+          display: none;
+        }
+        @media (max-width: 760px) {
+          .site-nav {
+            position: static;
+            display: flex;
+            flex-wrap: wrap;
+            grid-column: 1 / -1;
+            padding: 0 0 1rem;
+            border: 0;
+            box-shadow: none;
+          }
+          .menu-toggle {
+            display: none;
+          }
+        }
+      </style></noscript
+    >
+    <link rel="stylesheet" href="../assets/css/site.css?v=ffeb75d8b147" />
+  </head>
+  <body class="case-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="shell header-inner">
+        <a
+          class="brand"
+          href="../index.html"
+          aria-label="Vijayaadhithan Tamilselvan, home"
+          ><span class="brand-mark" aria-hidden="true">vt<span>.</span></span
+          ><span class="brand-name">Vijayaadhithan T.</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span></span><span></span><span class="sr-only">Open navigation</span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          <a href="../index.html#experience">Experience</a
+          ><a href="../index.html#work">Projects</a
+          ><a href="../index.html#research">Research</a
+          ><a href="../index.html#contact">Contact</a
+          ><a
+            class="mobile-resume"
+            href="../documents/Vjaadhi_Resume_1.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View résumé ↗</a
+          >
+        </nav>
+        <a
+          class="header-cta"
+          href="../documents/Vjaadhi_Resume_1.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Résumé <span aria-hidden="true">↗</span></a
+        >
+      </div>
+      <div class="reading-progress" aria-hidden="true"><span></span></div>
+    </header>
+    <main id="main" class="shell case-main">
+      <a class="back-link" href="../index.html#work">← All work</a>
+      <header class="case-hero">
+        <p class="kicker">06 / Applied AI prototype</p>
+        <h1>Project staffing assistant</h1>
+        <p class="case-lead">
+          A retrieval-driven assistant that turns conversational project
+          requirements into candidate matching and skill-gap analysis.
+        </p>
+        <dl class="case-meta">
+          <div>
+            <dt>Role</dt>
+            <dd>Applied AI development</dd>
+          </div>
+          <div>
+            <dt>Interface</dt>
+            <dd>Streamlit + Flask</dd>
+          </div>
+          <div>
+            <dt>Status</dt>
+            <dd>Enterprise prototype</dd>
+          </div>
+        </dl>
+      </header>
+      <figure class="case-figure">
+        <img
+          src="../images/ai-refinery-staffing-main.png"
+          alt="Project Staffing Assistant conversation and candidate matching interface"
+          loading="lazy"
+          width="3024"
+          height="1964"
+        />
+        <figcaption>The conversational staffing prototype.</figcaption>
+      </figure>
+      <section class="case-block reveal">
+        <p class="kicker">The problem</p>
+        <h2>Turn project requirements into a useful candidate shortlist.</h2>
+        <p>
+          I developed a multi-agent RAG prototype using the AI Refinery SDK and
+          a FAISS vector index to match employees with projects from
+          conversational requirements.
+        </p>
+      </section>
+      <ol class="pipeline" aria-label="System flow">
+        <li>
+          <span>01</span><strong>Understand requirements</strong
+          ><small
+            >Use the conversation to capture the project and its required
+            skills.</small
+          >
+        </li>
+        <li>
+          <span>02</span><strong>Retrieve &amp; refine</strong
+          ><small
+            >FAISS retrieval, a BAAI/bge-reranker-large model, and LLM-based
+            context compression.</small
+          >
+        </li>
+        <li>
+          <span>03</span><strong>Present the analysis</strong
+          ><small
+            >Ranked candidates, skill gaps, training suggestions, and readiness
+            estimates in a Streamlit UI.</small
+          >
+        </li>
+      </ol>
+      <section class="case-block reveal">
+        <p class="kicker">Implementation</p>
+        <h2>Session-aware analysis behind a conversational UI.</h2>
+        <p>
+          A Flask backend connects retrieval and agent workflows to Streamlit. A
+          persistent JSON-based state manager supports multi-turn interactions.
+          The prototype explores how retrieval, reranking, and compressed
+          context can support staffing decisions.
+        </p>
+        <div class="tag-row">
+          <span>AI Refinery SDK</span><span>FAISS</span><span>RAG</span
+          ><span>Reranking</span><span>Flask</span><span>Streamlit</span>
+        </div>
+      </section>
+      <aside class="source-note">
+        Enterprise prototype described in my résumé. Screenshots illustrate the
+        application; source code and internal datasets are not publicly linked.
+      </aside>
+      <a class="next-case" href="twitch-sustainability.html"
+        ><span>Explore another case study</span
+        ><strong
+          >Twitch sustainability research
+          <span aria-hidden="true">→</span></strong
+        ></a
+      >
+    </main>
+    <footer class="site-footer shell">
+      <p>© <span id="year">2026</span> Vijayaadhithan Tamilselvan</p>
+      <div>
+        <button class="motion-toggle" type="button" aria-pressed="false">
+          <span class="motion-symbol" aria-hidden="true">Ⅱ</span
+          ><span data-motion-label>Pause animations</span></button
+        ><a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+    <script src="../assets/js/main.js?v=dc5e47312bee"></script>
+  </body>
+</html>
