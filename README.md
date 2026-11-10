@@ -23,6 +23,7 @@ Visit `http://127.0.0.1:4173`. Relative links support both direct file previews 
 - `work/doorstep.html`: web and native Android marketplace architecture.
 - `work/staffing-assistant.html`: enterprise staffing prototype.
 - `work/twitch-sustainability.html`: master's thesis, methods, and limitations.
+- `sitemap.xml`: public homepage and case-study URLs for search engines. Submit `https://vijayaadhithan.github.io/web/sitemap.xml` in Google Search Console and update the list when adding or removing pages.
 - `assets/css/main.css`: off-white, charcoal, and muted-blue design system, responsive homepage, and motion styles.
 - `assets/css/portfolio.css`: shared case-study layouts and the illustrative commerce walkthrough.
 - `assets/css/site.css`: generated stylesheet combining the homepage and case-study styles. Every page references the same content-versioned bundle, preventing older cached styles from being mixed with newer markup.
