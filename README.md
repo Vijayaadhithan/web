@@ -43,7 +43,7 @@ The November 2026 update uses the supplied project READMEs, resumes, thesis, and
 - Honda Agent contributions include concurrent LLM extraction, Pandas-based multi-format ingestion, tri-layer confidence scoring, and contribution to securing an enterprise contract. Source identification, ontology work, retrieval evaluation, and the separate claims-analysis workstream retain their own scope.
 - HTR metrics include the repository's experimental context and both CER and WER.
 - Commerce examples are illustrative, make no live requests, and preserve historical-price and private-access boundaries.
-- `documents/Vjaadhi_Resume_1.pdf` remains the supplied canonical resume. The additional experience is included in the site; the original PDF has not been rewritten.
+- `documents/Vjaadhi_Resume_1.pdf` is the supplied canonical resume, corrected on November 11, 2026 to remove `(Contract)` from the Software Test Engineer title. Additional experience is included in the site.
 - `documents/Thesis.pdf` is the supplied research document. The commercial agreement and its personal and financial details are not included in the public files.
 
 The homepage prioritizes a recruiter's first scan: role, specialization, resume, and three Accenture outcomes, followed by concise experience and project summaries. Full technical context remains on the case-study pages.
